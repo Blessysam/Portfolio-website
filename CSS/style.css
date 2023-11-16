@@ -1,0 +1,449 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    height: 100%;
+   
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: rgb(54, 7, 85);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+.header::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #1d192921;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.logo{
+    font-size: 32px;
+    color: white;
+    text-decoration: none;
+    
+}
+.navbar  a{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    margin-left: 26px;
+}
+.navbar  a:hover{
+    color: rgb(202, 188, 0);
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+
+.icons{
+    position: absolute;
+    right: 5%;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.home{
+    padding: 100px 0px;
+    text-align: center;
+    background-color:  white;
+    padding: 15px 9%;
+}
+.home-container{
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.home .head-name{
+    color: rgb(54, 7, 85);
+}
+.home-container .home-content h1{
+    font-size: 45px;
+    text-align: justify;
+    padding: 200px 0 10px 0;
+}
+.home-container .home-content h3{
+    font-size: 45px;
+    text-align: justify;
+    line-height: 20px;
+}
+.home-container .home-content h4{
+    font-size: 35px;
+    text-align: justify;
+    padding: 20px 0;
+}
+.home-container .home-img {
+    padding-top: 150px;
+    flex: 50%;
+    padding-bottom: 140px;
+    padding-left: 70px;
+    
+}
+.home-container .home-img img{
+    width: 90%;
+    height: 100%;
+    border-radius: 50%;
+    padding-left: 160px;
+}
+.home-container .home-content .home-icons{
+    padding: 10px 0;
+}
+.home-container .home-content .home-icons a{
+    color: black;
+    font-size: 32px;
+    color: rgb(54, 7, 85);
+}
+.home-container .home-content .home-icons a:hover{
+    cursor: pointer;
+    color: rgba(165, 165, 3, 0.76);
+}
+.home .home-content .btn{
+    padding: 8px 12px;
+    background: linear-gradient(rgb(62, 6, 99),rgb(62, 6, 99),rgba(233, 233, 4, 0.76));
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+}
+.home .home-content .btn:hover{
+    cursor: pointer;
+    background: linear-gradient(rgba(233, 233, 4, 0.76),rgb(62, 6, 99),rgb(62, 6, 99));
+
+}
+.about{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgba(225, 197, 245, 0.274);
+    padding: 15px 9%;
+}
+.about h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    text-decoration: underline;
+}
+.about-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 30px;
+
+}
+.about-container .about-img img{
+    width: 90%;
+    height: 90%;
+}
+.about-container .about-img{
+    padding-top: 20px;
+    flex:50%;
+    padding-bottom: 100px;
+}
+.about-container .about-content{
+    flex: 50%;
+    padding-bottom: 100px;
+}
+.about-container .about-content p{
+    text-align: justify;
+    padding-top: 130px;
+    font-weight: 500;
+
+}
+.about-container .about-content .btn{
+    padding: 8px 12px;
+    background: linear-gradient(rgb(62, 6, 99),rgb(62, 6, 99),rgba(233, 233, 4, 0.76));
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+}
+.about-container .about-content .btn:hover{
+    cursor: pointer;
+    background: linear-gradient(rgba(233, 233, 4, 0.76),rgb(62, 6, 99),rgb(62, 6, 99));
+}
+
+.about-container .about-content i{
+    font-size: 16px;
+}
+.about-container .about-content .info{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-weight: 600;
+}
+.about-container .about-content .info:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: rgb(62, 6, 99);
+}
+
+.skills{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: white;
+    padding: 15px 9%;
+}
+.skills h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    text-decoration: underline;
+    color: black;
+}
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 30px;
+}
+.skills-container .skills-data{
+    padding-top: 70px;
+    padding-bottom: 50px;
+    flex: 50%;
+}
+.skills-container .skills-data .skill-cont{
+    padding: 0px 2px;
+    background-color: rgba(204, 204, 4, 0.836);
+    width: 500px;
+    border-radius: 50px;
+    box-shadow: 0 4px 25px rgba(2, 7, 10, 0.15);
+}
+.skills-container .skills-data .skill-cont .skill-per{
+    background-color: rgb(57, 17, 95);
+    border-radius: 50px;
+    text-align: end;
+    color: white;
+    font-size: 16px;
+}
+.skills-container .skills-data h3{
+    text-align: left;
+    padding: 15px 0;
+}
+.html{
+    width: 95%;
+}
+.css{
+    width: 85%;
+}
+.js{
+    width: 75%;
+}
+.python{
+    width: 80%;
+}
+.skills-container .skills-img{
+    flex: 50%;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+.skills-container .skills-img img{
+    width: 110%;
+    height: 110%;
+    border-radius: 20px 0;
+}
+.education{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgba(225, 197, 245, 0.274);
+    padding: 15px 9%;
+}
+.education h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-decoration: underline;
+}
+.education .edu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(420px,1fr));
+    gap: 80px;
+    padding-bottom: 140px;
+}
+.education .edu-container .edu-content{
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: rgb(67, 26, 95);
+    text-align: center;
+    padding: 20px 10px;
+    transition: 2s;
+}
+.education .edu-container .edu-content:hover{
+    transform: scale(1.1);
+}
+.education .edu-container .edu-content h4{
+    font-style: italic;
+    color: rgb(175, 175, 0);
+
+}
+.education .edu-container .edu-content h3{
+    font-size: 21px;
+    color: white;
+}
+.education .edu-container .edu-content h5{
+    font-size: 16px;
+    color: white;
+}
+.projects{
+    padding: 100px 0px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 15px 9%;
+}
+.projects h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    text-decoration: underline;
+}
+.pro-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(420px,1fr));
+    gap: 80px;
+    padding-bottom: 100px;
+}
+.pro-container .pro-content img{
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.pro-container .pro-content img:hover{
+    transform: scale(1.1);
+}
+.pro-container .pro-content p{
+    font-size: 16px;
+    font-weight: 900;
+    padding: 20px 0;
+}
+.contact{
+    background-color:  rgba(225, 197, 245, 0.274);
+    text-align: center;
+    padding: 100px 0px;
+    padding: 15px 9%;
+}
+.contact h2{
+    font-size: 40px;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+.contact-container{
+    padding: 30px 40px;
+}
+.contact-container form{
+    padding: 20px 0;
+}
+.contact-container form .form-input{
+    width: 50%;
+    font-size: 16px;
+    padding: 16px 12px;
+    border-radius: 8px;
+    border: 1.3px solid gray;
+    margin-bottom: 20px;
+    background-color: rgba(253, 253, 253, 0.452);
+    
+}
+.contact-container form  .btn{
+    padding: 8px 12px;
+    background: linear-gradient(rgb(62, 6, 99),rgb(62, 6, 99),rgba(233, 233, 4, 0.76));
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font-size: 20px;
+}
+.contact-container form  .btn:hover{
+    cursor: pointer;
+    background: linear-gradient(rgba(233, 233, 4, 0.76),rgb(62, 6, 99),rgb(62, 6, 99));
+
+}
+.footer{
+    padding-top: 50px;
+    text-align: center;
+}
+.footer h1{
+    font-size: 45px;
+}
+.footer i{
+    font-size: 32px;
+    padding: 10px 0;
+    color: rgb(62, 6, 99);
+
+}
+.footer i:hover{
+    color: black;
+}
+.footer p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+@media (max-width:992px){
+    .header{
+        padding: 20px 5%;
+    }
+    .home{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width:768px){
+    .icons{
+        display: inline-flex;
+    }
+    #check:checked~.icons #menu-icon{
+        display: none;
+
+    }
+    .icons #close-icon{
+        display: none;
+    }
+    #check:checked~.icons #close-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: #0000001e;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 280px;
+    }
+    .navbar a{
+        display: block;
+        font-size: 16px;
+        margin: 24px 0;
+        text-align: center;
+        margin-bottom: 20px;
+        transform: translateY(-50px);
+        transition: .3s ease;
+    }
+    #check:checked~.navbar a{
+        transform: translateY(0);
+    }
+    
+    
+}
+
+
